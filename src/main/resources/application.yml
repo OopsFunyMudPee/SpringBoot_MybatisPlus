@@ -1,0 +1,26 @@
+# application.yml
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #    url: jdbc:mysql://192.168.2.250:3307/news2.5?serverTimezone=Asia/Shanghai
+    #    username: lhw
+    #    password: 123456
+    url: jdbc:mysql://192.168.1.107:3306/laudb?serverTimezone=Asia/Shanghai
+    username: admin
+    password: admin
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl   #开启SQL语句打印
+#logging:
+#  level:
+#    org:
+#      springframework:
+#        boot:
+#          autoconfigure: error
+logging:
+  level:
+    org:
+      springframework:
+        boot:
+          autoconfigure: ERROR         # 日志不打印条件评估报告
