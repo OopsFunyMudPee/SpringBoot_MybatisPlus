@@ -33,4 +33,15 @@ public class User {
 
     private LocalDateTime createTime;
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", email='" + email + '\'' +
+                ", managerId=" + managerId +
+                ", createTime=" + createTime +
+                '}';
+    }
 }
