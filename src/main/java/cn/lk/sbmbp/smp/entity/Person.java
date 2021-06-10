@@ -1,4 +1,4 @@
-package cn.lk.sbmbp.smp.po;
+package cn.lk.sbmbp.smp.entity;
 
 /**
  * @author 6k2

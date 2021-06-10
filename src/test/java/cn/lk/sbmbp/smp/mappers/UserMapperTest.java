@@ -1,6 +1,6 @@
 package cn.lk.sbmbp.smp.mappers;
 
-import cn.lk.sbmbp.smp.po.Person;
+import cn.lk.sbmbp.smp.entity.Person;
 import cn.lk.sbmbp.smp.po.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
