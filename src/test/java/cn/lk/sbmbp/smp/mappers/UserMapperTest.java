@@ -35,6 +35,7 @@ public class UserMapperTest {
     @Test
     public void demo1() {
         Person person = new Person.Builder().name("guanbin").location("shanghai").habit("football").job("it").build();
+        System.out.println(person);
     }
 
 }

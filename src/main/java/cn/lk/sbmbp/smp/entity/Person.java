@@ -8,9 +8,9 @@ package cn.lk.sbmbp.smp.entity;
  */
 public class Person {
     private final String name;
-    private String location;
-    private String job;
-    private String habit;
+    private       String location;
+    private       String job;
+    private       String habit;
 
     private Person(Builder builder) {
         name = builder.name;
@@ -50,6 +50,16 @@ public class Person {
 
         public Person build() {
             return new Person(this);
+        }
+
+        @Override
+        public String toString() {
+            return "Builder{" +
+                    "name='" + name + '\'' +
+                    ", location='" + location + '\'' +
+                    ", job='" + job + '\'' +
+                    ", habit='" + habit + '\'' +
+                    '}';
         }
     }
 }
