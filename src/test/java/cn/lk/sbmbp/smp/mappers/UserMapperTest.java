@@ -29,7 +29,6 @@ public class UserMapperTest {
         List<User> list = mapper.selectList(null);
         assertEquals(5, list.size());
         list.forEach(System.out::println);
-
     }
 
 }
