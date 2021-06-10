@@ -51,15 +51,15 @@ public class Person {
         public Person build() {
             return new Person(this);
         }
+    }
 
-        @Override
-        public String toString() {
-            return "Builder{" +
-                    "name='" + name + '\'' +
-                    ", location='" + location + '\'' +
-                    ", job='" + job + '\'' +
-                    ", habit='" + habit + '\'' +
-                    '}';
-        }
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", location='" + location + '\'' +
+                ", job='" + job + '\'' +
+                ", habit='" + habit + '\'' +
+                '}';
     }
 }
