@@ -3,10 +3,10 @@ package cn.lk.sbmbp.smp.mappers;
 import cn.lk.sbmbp.smp.po.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -21,7 +21,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @SpringBootTest
 public class UserMapperTest {
 
-    @Autowired
+    @Resource
     private UserMapper mapper;
 
     @Test
@@ -31,6 +31,5 @@ public class UserMapperTest {
         list.forEach(System.out::println);
 
     }
-
 
 }
