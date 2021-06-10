@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS user;
-CREATE TABLE user
+DROP TABLE IF EXISTS test_user;
+CREATE TABLE test_user
 (
     id          BIGINT(20) PRIMARY KEY NOT NULL COMMENT '主键',
     name        VARCHAR(30) DEFAULT NULL COMMENT '姓名',
@@ -11,7 +11,7 @@ CREATE TABLE user
 ) ENGINE = INNODB
   CHARSET = UTF8;
 
-INSERT INTO user (id, name, age, email, manager_id, create_time)
+INSERT INTO test_user (id, name, age, email, manager_id, create_time)
 VALUES (1, '大BOSS', 40, 'boss@baomidou.com', NULL, '2021-03-22 09:48:00'),
        (2, '李经理', 40, 'boss@baomidou.com', 1, '2021-01-22 09:48:00'),
        (3, '黄主管', 40, 'boss@baomidou.com', 2, '2021-01-22 09:48:00'),

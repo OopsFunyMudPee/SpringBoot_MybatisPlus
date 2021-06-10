@@ -1,6 +1,8 @@
 package cn.lk.sbmbp.smp.po;
 
 
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 import java.time.LocalDateTime;
@@ -12,8 +14,14 @@ import java.time.LocalDateTime;
  * @desc IntelliJ IDEA: IntelliJ IDEA
  */
 @Data
+@TableName("test_user")
 public class User {
-    private Long          id;
+    /**
+     * 注解在实体类的某一字段上，表示这个字段对应数据库表的主键
+     */
+    @TableId
+    private Long id;
+
     private String        name;
     private Integer       age;
     private String        email;
