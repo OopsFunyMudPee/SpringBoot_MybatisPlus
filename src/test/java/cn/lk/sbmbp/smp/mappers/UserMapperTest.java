@@ -1,5 +1,6 @@
 package cn.lk.sbmbp.smp.mappers;
 
+import cn.lk.sbmbp.smp.po.Person;
 import cn.lk.sbmbp.smp.po.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -29,6 +30,11 @@ public class UserMapperTest {
         List<User> list = mapper.selectList(null);
         assertEquals(5, list.size());
         list.forEach(System.out::println);
+    }
+
+    @Test
+    public void demo1() {
+        Person person = new Person.Builder().name("guanbin").location("shanghai").habit("football").job("it").build();
     }
 
 }
