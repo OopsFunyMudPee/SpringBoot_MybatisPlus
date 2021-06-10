@@ -6,6 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @author 6k2
+ * @email <a href="mailto:laukaye@qq.com">Email To</a>
+ * @date 2021/6/10
+ * @desc MybatisPlusApplication: springboot 启动类
  */
 @SpringBootApplication
 @MapperScan("cn.lk.sbmbp.smp.mappers")
