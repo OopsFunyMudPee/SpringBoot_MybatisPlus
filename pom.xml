@@ -94,7 +94,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.3.7.RELEASE</version>
                 <configuration>
-                    <mainClass>cn.lk.sbmbp.smp.MybatisPlusApplication</mainClass>
+                    <mainClass>cn.lk.sbmbp.smp.App</mainClass>
                 </configuration>
                 <executions>
                     <execution>
