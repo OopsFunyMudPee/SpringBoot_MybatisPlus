@@ -16,9 +16,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @SpringBootApplication
 @MapperScan("cn.lk.sbmbp.smp.mappers")
 public class App {
-
     public static void main(String[] args) {
         SpringApplication.run(App.class, args);
     }
-
 }
