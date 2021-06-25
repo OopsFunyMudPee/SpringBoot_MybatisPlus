@@ -58,10 +58,11 @@ public class UserMapperTest {
         try (Jedis jedis = sentinelPool.getResource()) {
             //获取客户端
             //执行两个命令
-            jedis.set("mykey", "myvalue");
-            String myvalue = jedis.get("mykey");
+            jedis.set("test2", "myvalue3");
+            String myvalue = jedis.get("test2");
             //打印信息
             System.out.println(myvalue);
+            System.out.println(jedis.get("test1"));
         } catch (Exception e) {
             e.printStackTrace();
         }
