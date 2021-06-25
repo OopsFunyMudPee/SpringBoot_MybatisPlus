@@ -55,8 +55,7 @@ public class UserMapperTest {
         jedisPoolConfig.setMinIdle(5);
         jedisPoolConfig.setMaxWaitMillis(1000);
         JedisSentinelPool sentinelPool = new JedisSentinelPool("mymaster", sentinels, jedisPoolConfig, "123456");
-        try (Jedis jedis = sentinelPool.getResource()) {
-            //获取客户端
+        try (Jedis jedis = sentinelPool.getResource()) {//获取客户端
             //执行两个命令
             jedis.set("test2", "myvalue3");
             String myvalue = jedis.get("test2");

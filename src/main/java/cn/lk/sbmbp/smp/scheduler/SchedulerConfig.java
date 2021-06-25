@@ -19,7 +19,6 @@ import javax.annotation.Resource;
 @Component
 public class SchedulerConfig {
 
-
     //#定时任务设置时间-------- "秒 分 时 ? * ?" [秒] [分] [小时] [日] [月] [周] [年]
     //#   秒 分 时 ? * ?
     //每隔5秒执行一次 */20 * * * * ?
